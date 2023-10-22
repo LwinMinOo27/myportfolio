@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins;
+  }
+}
+
+@layer components {
+  a {
+    @apply text-lg;
+  }
+  .container {
+    @apply my-8 max-w-lg mx-auto lg:max-w-4xl lg:flex lg:mt-24 xl:mt-32;
+  }
+  .intro_container {
+    @apply lg:flex;
+  }
+  .img_container {
+    @apply w-64 h-64 sm:w-72 sm:h-72 max-w-xs mx-auto lg:hidden;
+  }
+  .img_container img {
+    @apply w-full h-full rounded-full shadow-md shadow-[#ccc];
+  }
+  .text_container {
+    @apply max-w-sm mx-auto text-center mt-10 sm:max-w-lg lg:mt-20 lg:text-left;
+  }
+  .title {
+    @apply text-4xl font-semibold text-[#222] mb-4 lg:text-5xl lg:mb-8 xl:text-6xl;
+  }
+  .desc_text {
+    @apply text-[#666] text-[1.05rem];
+  }
+  .md_img_container {
+    @apply hidden lg:flex;
+  }
+  .md_img_container img {
+    @apply w-[22rem] h-[22rem] rounded-full ml-8 shadow-md shadow-[#ccc];
+  }
+  .icons_container {
+    @apply mt-8;
+  }
+  .icons_container button {
+    @apply mr-4;
+  }
+  .icons_container button:hover {
+    @apply text-[#3b35eb] transition-colors duration-300;
+  }
+  .tech_icons_container {
+    @apply mt-8 lg:mt-16 max-w-sm mx-auto lg:mx-0
+  }
+  .tech_icons {
+    @apply flex
+  }
+  .tech_icons img {
+    @apply mr-16 md:mr-8
+  }
+  .tech_icons img:hover {
+    @apply animate-bounce
+  }
+}
