@@ -4,24 +4,17 @@
   box-sizing: border-box;
 }
 
-:root {
-  --mainColor: #29335c;
-  --mainColorLight: #5767aa;
-  --secondaryColor: #db2b39;
-  --textColor: #eee;
-}
-
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  align-items: center;
+  padding: 1.5rem;
   color: #333;
 }
 
 nav a {
-  margin: 0 1.3rem;
   font-weight: 600;
+  margin: 0 1rem;
 }
 
 nav a:hover {
