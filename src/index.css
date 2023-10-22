@@ -15,7 +15,7 @@
     @apply text-lg;
   }
   .container {
-    @apply my-8 max-w-lg mx-auto lg:max-w-4xl lg:flex lg:mt-24 xl:mt-32;
+    @apply my-8 max-w-xl mx-auto lg:max-w-4xl lg:flex lg:mt-24 xl:mt-32;
   }
   .intro_container {
     @apply lg:flex;
@@ -27,10 +27,10 @@
     @apply w-full h-full rounded-full shadow-md shadow-[#ccc];
   }
   .text_container {
-    @apply max-w-sm mx-auto text-center mt-10 sm:max-w-lg lg:mt-20 lg:text-left;
+    @apply mx-8 text-center mt-8 sm:max-w-lg lg:text-left;
   }
   .title {
-    @apply text-4xl font-semibold text-[#222] mb-4 lg:text-5xl lg:mb-8 xl:text-6xl;
+    @apply text-3xl font-semibold text-[#222] mb-4 md:text-4xl lg:text-5xl lg:mb-8 xl:text-6xl;
   }
   .desc_text {
     @apply text-[#666] text-[1.05rem];
@@ -39,7 +39,7 @@
     @apply hidden lg:flex;
   }
   .md_img_container img {
-    @apply w-[22rem] h-[22rem] rounded-full ml-8 shadow-md shadow-[#ccc];
+    @apply w-[300px] h-[300px] object-cover rounded-full ml-8 shadow-md shadow-[#ccc];
   }
   .icons_container {
     @apply mt-8;
@@ -51,15 +51,15 @@
     @apply text-[#3b35eb] transition-colors duration-300;
   }
   .tech_icons_container {
-    @apply mt-8 lg:mt-16 max-w-sm mx-auto lg:mx-0
+    @apply max-w-max mx-auto lg:mx-0 lg:mt-16 mt-8;
   }
   .tech_icons {
-    @apply flex
+    @apply grid grid-cols-2 gap-4 sm:flex;
   }
   .tech_icons img {
-    @apply mr-16 md:mr-8
+    @apply m-2 sm:m-1;
   }
   .tech_icons img:hover {
-    @apply animate-bounce
+    @apply -translate-y-2 duration-500;
   }
 }
