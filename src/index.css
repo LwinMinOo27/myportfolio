@@ -6,16 +6,13 @@
 
 @layer base {
   body {
-    @apply font-poppins bg-[#fafafa];
+    @apply font-poppins bg-[#f5f4f8];
   }
 }
 
 @layer components {
-  a {
-    @apply text-lg;
-  }
   .container {
-    @apply my-8 max-w-xl mx-auto lg:max-w-4xl lg:flex lg:mt-24 xl:mt-32;
+    @apply my-8 max-w-max mx-auto lg:max-w-4xl lg:flex lg:mt-24 xl:mt-40 lg:h-[80vh] mb-16;
   }
   .intro_container {
     @apply lg:flex;

@@ -10,11 +10,13 @@ header {
   align-items: center;
   padding: 1.5rem;
   color: #333;
+  background-color: #f5f5f5;
 }
 
 nav a {
   font-weight: 600;
   margin: 0 1rem;
+  font-size: 1.1rem;
 }
 
 nav a:hover {

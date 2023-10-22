@@ -27,7 +27,9 @@ const Intro = () => {
             </button>
           </div>
           <div className="tech_icons_container">
-            <p className="text-lg uppercase text-[#555] font-semibold mb-4">tech stack</p>
+            <p className="text-lg uppercase text-[#555] font-semibold mb-4">
+              tech stack
+            </p>
             <div className="tech_icons">
               <img src="https://skillicons.dev/icons?i=html,css" />
               <img src="https://skillicons.dev/icons?i=js,ts" />
