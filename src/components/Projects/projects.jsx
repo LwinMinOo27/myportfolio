@@ -1,22 +1,8 @@
-import { Button, Card } from "@material-tailwind/react";
+import { Card } from "@material-tailwind/react";
 import React from "react";
 import { project_data } from "./data";
 
 const Project_Card = () => {
-  const videoRef = React.useRef(null);
-
-  const handleMouseEnter = (videoRef) => {
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  };
-
-  const handleMouseLeave = (videoRef) => {
-    if (videoRef.current) {
-      videoRef.current.pause();
-    }
-  };
-
   return (
     <div>
       {project_data.map((data) => {
@@ -26,14 +12,9 @@ const Project_Card = () => {
             className="shadow-lg p-4 md:p-8 rounded-lg mt-16 w-full"
             key={data.id}>
             <div>
-            <video
-              ref={videoRef}
+            <img
               className="shadow-md rounded-lg border-[1px] w-full h-auto object-fill]"
-              src={data.vd_url}
-              loop
-              muted
-              onMouseEnter={() => handleMouseEnter(videoRef)}
-              onMouseLeave={() => handleMouseLeave(videoRef)}
+              src={data.img_url}
             />
             </div>
 
