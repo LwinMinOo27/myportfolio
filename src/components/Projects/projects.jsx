@@ -25,16 +25,17 @@ const Project_Card = () => {
           <Card
             className="shadow-lg p-4 md:p-8 rounded-lg mt-16 w-full"
             key={data.id}>
+            <div>
             <video
               ref={videoRef}
-              className="shadow-md rounded-lg border-[1px] w-full h-96 object-cover"
+              className="shadow-md rounded-lg border-[1px] w-full h-auto object-fill]"
               src={data.vd_url}
               loop
               muted
               onMouseEnter={() => handleMouseEnter(videoRef)}
               onMouseLeave={() => handleMouseLeave(videoRef)}
-            >
-              </video>
+            />
+            </div>
 
             <div className="my-8 text-lg font-semibold text-[#555] text-center lg:text-left">
               <div className="text-sm uppercase text-[#333] sm:flex items-center justify-center lg:justify-start">
