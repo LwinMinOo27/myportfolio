@@ -7,7 +7,7 @@ const Intro = () => {
     <div className="container">
       <div className="intro_container">
         <div className="img_container">
-          <img src="avatar.png" />
+          <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?size=626&ext=jpg&ga=GA1.1.1359859047.1694861952&semt=ais" />
         </div>
         <div className="text_container">
           <p className="title">Front End React Developer</p>
@@ -39,7 +39,7 @@ const Intro = () => {
           </div>
         </div>
         <div className="md_img_container">
-          <img src="avatar.png" />
+          <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?size=626&ext=jpg&ga=GA1.1.1359859047.1694861952&semt=ais" />
         </div>
       </div>
     </div>

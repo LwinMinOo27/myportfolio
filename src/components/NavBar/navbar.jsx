@@ -9,7 +9,7 @@ const Navbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
   return (
-    <header className="shadow-md sticky">
+    <header className="shadow-md sticky top-0 z-50">
       <p className="text-2xl tracking-wide font-bold">Lmo.dev</p>
       <div className="flex">
         <nav ref={navRef}>

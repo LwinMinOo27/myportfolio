@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,7 +14,7 @@
 
 @layer components {
   .container {
-    @apply my-8 max-w-max mx-auto lg:max-w-4xl lg:flex lg:mt-24 xl:mt-40 lg:h-[80vh] mb-16;
+    @apply my-8 max-w-max mx-auto lg:h-[80vh] lg:grid place-content-center mb-16;
   }
   .intro_container {
     @apply lg:flex;
