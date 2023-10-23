@@ -22,23 +22,26 @@ const Project_Card = () => {
       {project_data.map((data) => {
         const videoRef = React.createRef();
         return (
-          <Card className="shadow-lg p-8 rounded-lg mt-16 w-full" key={data.id}>         
-              <video
-                ref={videoRef}
-                className="shadow-md rounded-lg border-[1px]"
-                src={data.vd_url}
-                loop muted
-								onMouseEnter={() => handleMouseEnter(videoRef)}
-								onMouseLeave={() => handleMouseLeave(videoRef)}
-              />
-            
+          <Card
+            className="shadow-lg p-4 md:p-8 rounded-lg mt-16 w-full"
+            key={data.id}>
+            <video
+              ref={videoRef}
+              className="shadow-md rounded-lg border-[1px] w-full h-auto object-fill"
+              src={data.vd_url}
+              loop
+              muted
+              onMouseEnter={() => handleMouseEnter(videoRef)}
+              onMouseLeave={() => handleMouseLeave(videoRef)}
+            />
+
             <div className="my-8 text-lg font-semibold text-[#555] text-center lg:text-left">
-              <p className="text-sm uppercase text-[#333]">
-                <span className="text-[#332add] font-bold text-xl">
+              <div className="text-sm uppercase text-[#333] sm:flex items-center justify-center lg:justify-start">
+                <p className="text-[#332add] font-bold text-xl sm:mr-2">
                   {data.title}{" "}
-                </span>
-                ({data.time})
-              </p>
+                </p>
+                <p>({data.time})</p>
+              </div>
               <p className="mt-4">{data.description}</p>
               <div className="flex max-w-max mx-auto text-lg text-[#eee] font-semibold mt-8">
                 <p className="p-2 mx-2 bg-black bg-opacity-80 rounded-lg flex justify-center items-center">
