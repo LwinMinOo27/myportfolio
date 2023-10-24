@@ -6,16 +6,15 @@ const Project_Card = () => {
   return (
     <div>
       {project_data.map((data) => {
-        const videoRef = React.createRef();
         return (
           <Card
             className="shadow-lg p-4 md:p-8 rounded-lg mt-16 w-full"
             key={data.id}>
             <div>
-            <img
-              className="shadow-md rounded-lg border-[1px] w-full h-auto object-fill]"
-              src={data.img_url}
-            />
+              <img
+                className="w-full h-auto object-cover shadow-md rounded-xl"
+                src={data.img_url}
+              />
             </div>
 
             <div className="my-8 text-lg font-semibold text-[#555] text-center lg:text-left">
@@ -28,10 +27,10 @@ const Project_Card = () => {
               <p className="mt-4">{data.description}</p>
               <div className="flex max-w-max mx-auto text-lg text-[#eee] font-semibold mt-8">
                 <p className="p-2 mx-2 bg-black bg-opacity-80 rounded-lg flex justify-center items-center">
-                  React
+                  {data.type}
                 </p>
                 <p className="p-2 mx-2 bg-black bg-opacity-80 rounded-lg flex justify-center items-center">
-                  Tailwind CSS
+                  {data.css}
                 </p>
               </div>
             </div>
