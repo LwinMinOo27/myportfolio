@@ -1,6 +1,6 @@
 import React from "react";
 import { BiSolidMapPin } from "react-icons/bi";
-import {GrMail} from 'react-icons/gr';
+import { GrMail } from "react-icons/gr";
 
 const icons = [
   {
@@ -29,7 +29,7 @@ const icons = [
 
 const Contact = () => {
   return (
-    <div className="bg-[#eee] py-32 px-16">
+    <div className="bg-[#eee] py-32 px-16" id="contact">
       <div className="md:max-w-4xl mx-auto">
         <div className="text-center md:text-left">
           <p className="text-xl font-bold text-blue-500 mb-4">Contact</p>

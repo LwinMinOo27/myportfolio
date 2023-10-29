@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-[#fff] py-16 md:py-32 lg:px-8">
+    <div className="bg-[#fff] grid place-content-center items-center px-8 py-32 lg:h-[100vh]" id="about">
       <div className="max-w-lg mx-8 sm:mx-auto lg:max-w-5xl lg:grid grid-cols-2 items-center place-content-center">
         <img
           src="https://pbs.twimg.com/media/Dw_0zPdVsAA6GsK.jpg"

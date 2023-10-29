@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 
 const Intro = () => {
   return (
-    <div className="container">
+    <div className="container" id="home">
       <div className="intro_container">
         <div className="img_container">
           <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?size=626&ext=jpg&ga=GA1.1.1359859047.1694861952&semt=ais" />

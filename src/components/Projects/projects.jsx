@@ -43,9 +43,8 @@ const Project_Card = () => {
 
 const Projects = () => {
   return (
-    <section
-      className="max-w-lg sm:mx-auto text-center md:text-left mx-8 py-24
-		lg:max-w-5xl lg:px-8">
+    <section id="projects"
+      className="max-w-lg sm:mx-auto text-center md:text-left mx-8 py-32 lg:max-w-5xl lg:px-8">
       <div>
         <p className="text-[#430fff] font-bold text-lg uppercase mb-4">
           Projects

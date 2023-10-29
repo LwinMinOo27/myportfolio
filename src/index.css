@@ -10,11 +10,14 @@
   body {
     @apply font-poppins bg-[#f5f4f8];
   }
+  html {
+    scroll-behavior: smooth !important;
+ }
 }
 
 @layer components {
   .container {
-    @apply my-8 max-w-max mx-auto lg:h-[80vh] lg:grid place-content-center mb-16;
+    @apply max-w-max mx-auto lg:h-[100vh] pt-32 py-16 lg:grid place-content-center;
   }
   .intro_container {
     @apply lg:flex;
@@ -38,7 +41,7 @@
     @apply hidden lg:flex;
   }
   .md_img_container img {
-    @apply w-[300px] h-[300px] object-cover rounded-full ml-8 shadow-md shadow-[#ccc];
+    @apply w-[300px] h-[300px] object-cover rounded-full ml-4 xl:ml-8 shadow-md shadow-[#ccc];
   }
   .icons_container {
     @apply mt-8;
